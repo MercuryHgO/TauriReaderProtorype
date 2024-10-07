@@ -1,0 +1,9 @@
+.book {
+  background-color: #c5c5c5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .book {
+    background-color: #7a7a7a;
+  }
+}
