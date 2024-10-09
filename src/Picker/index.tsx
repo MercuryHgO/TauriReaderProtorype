@@ -78,7 +78,7 @@ const Picker: React.FC<Props>  = (props: Props) => {
               ref={ref} 
               style={{ transform: `scale(${scale})`, transition: 'transform 0.2s ease'}}
             >
-                {child}
+              {child}
             </div>
           </BrowserView>
           <MobileView>
@@ -89,7 +89,7 @@ const Picker: React.FC<Props>  = (props: Props) => {
               onTouchStart={() => handleTouchStart(index)}
               onTouchEnd={() => handleTouchEnd(index)}
             >
-                {child}
+              {child}
             </div>
           </MobileView>
         </>
@@ -104,6 +104,7 @@ const Picker: React.FC<Props>  = (props: Props) => {
       onPointerEnter={ () => setOnHower(true)}
       onPointerLeave={ () => setOnHower(false)}
     >
+      <button className="button-add">+</button>
       {clonedChildren}      
     </div>
   )

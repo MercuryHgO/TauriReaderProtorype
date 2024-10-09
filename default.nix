@@ -1,6 +1,6 @@
 
 {
-  runScript ? ''bash''
+  runScript ? ''pnpm run tauri''
 }:
 let
   android-nixpkgs = pkgs.callPackage (import (builtins.fetchGit {
@@ -13,7 +13,7 @@ let
   android-sdk = android-nixpkgs.sdk (sdkPkgs: with sdkPkgs; [
     build-tools-34-0-0
     cmdline-tools-latest
-    emulator
+    # emulator
     platform-tools
     platforms-android-34
 
